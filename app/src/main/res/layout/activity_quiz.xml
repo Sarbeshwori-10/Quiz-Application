@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".QuizActivity">
+
+        <!-- Question 1 -->
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="1. What is the name of the world largest desert?"/>
+
+        <RadioGroup
+            android:id="@+id/num_one_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/desert_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thar"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/kalahari_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalahari"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/sahara_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sahara"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonoran"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <!-- Question 2 -->
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="2. What is the name of the country that has the highest Barley production?" />
+
+        <RadioGroup
+            android:id="@+id/num_two_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="China"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/india_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/russia_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Russia"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="France"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <!-- Question 3 -->
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="3. What is the total number of country in Asia?" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Please enter your answer"
+            android:inputType="text" />
+
+        <!-- Question 4 -->
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="4. Choose the electrical devices from the following." />
+
+        <CheckBox
+            android:id="@+id/mobile_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/laptop_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laptop"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/gas_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gas stove"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/fan_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:text="Paper fan"
+            android:textSize="16sp" />
+
+        <!-- Question 5 -->
+
+        <TextView
+            style="@style/questionStyle"
+            android:text="5. Entomology is the science that studies?" />
+
+        <RadioGroup
+            android:id="@+id/num_five_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Behavior of human beings"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/insects_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insects"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The origin and history of technical and scientific terms"
+                android:textSize="16sp" />
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The formation of rocks"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+</ScrollView>
